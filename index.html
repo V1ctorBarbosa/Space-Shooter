@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Shooter</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="title">Space Shooter</h1>
+    </div>
+
+    <div class="container">
+
+        <!--GAME-->
+
+        <div class="game">
+            <div id="board">
+                <div class="rocks"></div>
+                <div id="jet"></div>
+                <div id="gameOver">
+                    <p>You lost!</p>
+                    <p>Sometimes that happens in life, but never give up!</p>
+                    <p id="restart" onclick="restart()">Try again!</p>
+                </div>
+            </div>
+        </div>
+
+        <!--MENU-->
+
+        <div class="menu">
+            <div class="points">
+                <div id="points-box">0</div>
+            </div>
+            <div class="controls">
+                <div class="controls-painel">
+                    <p class="controls1">shot <span class="space-bar">space</span></p>
+                    <p class="controls2">move <span class="arrow-left">&#8592;</span><span
+                            class="arrow-right">&#8594;</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="shot" src="sound/shot.mp3"></audio>
+    <audio id="explosion" src="sound/explosion.mp3"></audio>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

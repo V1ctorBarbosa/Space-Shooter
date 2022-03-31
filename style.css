@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: url("images/space.png");
+  overflow: hidden;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  color: white;
+}
+
+
+/*** Title ***/
+
+
+.title {
+  background-color: black;
+  display: inline-block;
+  padding: 5px 40px 0px 40px;
+}
+
+/*** Container ***/
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/*** Game ***/
+
+
+#board {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 40px auto;
+  border: 2px solid white;
+  background-color: black;
+  overflow: hidden;
+}
+
+#jet {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("images/ship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  bottom: 0px;
+}
+
+.bullets {
+  position: absolute;
+  bottom: 25px;
+  left: 51%;
+  width: 30px;
+  height: 40px;
+  background: url("images/bullets.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rocks {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("images/alien.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/*** Game Over ***/
+
+
+#gameOver {
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+#restart {
+  border: solid white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+p {
+  margin: 100px;
+}
+
+
+/*** Points ***/
+
+
+.points {
+  margin: 150px 0;
+  background-color: black;
+}
+
+#points-box {
+  margin: auto;
+  font-size: 4rem;
+}
+
+
+/*** Controls ***/
+
+
+.controls-painel {
+  margin: 100px 0;
+  border: solid white;
+  padding-bottom: 5px;
+  background-color: black;
+}
+
+.controls-painel>* {
+  margin: 25px;
+}
+
+.space-bar {
+  border: solid white;
+  padding: 3px 20px;
+}
+
+.arrow-left {
+  border: solid white;
+  padding: 0 5px 5px 5px;
+  margin-right: 15px;
+}
+
+.arrow-right {
+  border: solid white;
+  padding: 0 5px 5px 5px;
+}
+
+
+/*** Media Query ***/
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #board {
+    margin: 20px auto;
+  }
+
+  .points {
+    margin: 10px 100px;
+  }
+
+  .controls-painel {
+    margin: 0 100px;
+  }
+}
