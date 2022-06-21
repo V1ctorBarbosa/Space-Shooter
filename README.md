@@ -1,4 +1,4 @@
-# Space-Shooter
+#👾 Space-Shooter
 
 Shoot 'em up style game made with Javascript
 
